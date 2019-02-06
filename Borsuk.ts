@@ -32,7 +32,7 @@ let S1_PIN = AnalogPin.P1;
 let S2_PIN = AnalogPin.P2;
 
 //% weight=20 color=#3333FF icon="\uf1b9"
-namespace MotorDriver {
+namespace Borsuk {
     /**
 	 * Motor Run
 	 * @param speed [0-16] speed of Motor; eg: 10, 0, 16
