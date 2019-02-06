@@ -129,5 +129,15 @@ namespace MotorDriver {
         else
             pins.servoSetPulse(S2_PIN, temp)
     }
+	export function ServoDriveForward(s: Servo, angle: number): void {
+        let temp = 0
+        temp = angle * 10 + 500 //0.5ms - 2.5ms
+        if (s == Servo.S0)
+            pins.servoSetPulse(S0_PIN, temp)
+        else if (s == Servo.S1)
+            pins.servoSetPulse(S1_PIN, temp)
+        else
+            pins.servoSetPulse(S2_PIN, temp)
+    }
 
 }
