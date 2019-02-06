@@ -9,8 +9,8 @@
     },
     "files": [
         "README.md",
-        "MBorsuk.ts",
-        "_locales/zh/pxt-Motor-strings.json"
+        "Borsuk.ts",
+        "_locales/zh/Borsuk-strings.json"
     ],
     "testFiles": [
         "test.ts"
