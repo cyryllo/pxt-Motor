@@ -1,7 +1,7 @@
 {
-    "name": "pxt-Motor2",
+    "name": "Borsuk",
     "version": "0.0.0",
-    "description": "waveshare electronics",
+    "description": "Cyryllo",
     "license": "MIT",
     "dependencies": {
         "core": "*",
@@ -9,11 +9,11 @@
     },
     "files": [
         "README.md",
-        "MotorDriver.ts",
+        "MBorsuk.ts",
         "_locales/zh/pxt-Motor-strings.json"
     ],
     "testFiles": [
         "test.ts"
     ],
-    "public": false
+    "public": true
 }
