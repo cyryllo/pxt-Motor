@@ -119,7 +119,7 @@ namespace Borsuk {
     //% block="Servos %s| Turn Angle %angle"
     //% weight=60 
     //% angle.min=0 angle.max=180
-    export function ServoTurnAngle(s: Servo, angle: number): void {
+    export function ServoTurnkat(s: Servo, angle: number): void {
         let temp = 0
         temp = angle * 10 + 500 //0.5ms - 2.5ms
         if (s == Servo.S0)
