@@ -37,7 +37,7 @@ namespace Borsuk {
 	 * Motor Run
 	 * @param speed [0-16] speed of Motor; eg: 10, 0, 16
 	*/
-    //% blockId=MotorDriver_MotorRun block="Motor %m|index %index|speed %speed"
+    //% blockId=Borsuk_MotorRun block="Motor %m|index %index|speed %speed"
     //% weight=100
     //% speed.min=0 speed.max=16
     export function MotorRun(m: Motor, index: Dir, speed: number): void {
@@ -129,6 +129,10 @@ namespace Borsuk {
         else
             pins.servoSetPulse(S2_PIN, temp)
     }
+	//% blockId=ServoMotorForward
+    //% block="Servos %s| Motor Forward %angle"
+    //% weight=60 
+    //% angle.min=91 angle.max=180
 	export function ServoMotorForward(s: Servo, angle: number): void {
         let temp = 0
         temp = angle * 10 + 500 //0.5ms - 2.5ms
