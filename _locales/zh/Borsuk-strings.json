@@ -10,6 +10,7 @@
   "MotorDriver.ServoStop|block": "舵机 %s| 停止",
   "MotorDriver.ServoTurnAngle|block": "舵机 %s| 角度 %angle",
   "MotorDriver.ServoMotorForward|block": "舵机 %s| 角度 %angle",
+  "MotorDriver.ServoMotorBack|block": "舵机 %s| 角度 %angle",
   "Servo.S0|block": "S0",
   "Servo.S1|block": "S1",
   "Servo.S2|block": "S2",
