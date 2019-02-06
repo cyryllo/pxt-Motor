@@ -1,22 +1,23 @@
 // tests go here; this will not be compiled when this package is used as a library
 
 //Control motor A forward and set speed
-MotorDriver.MotorRun(Motor.A, Dir.forward, 0)
+Borsuk.MotorRun(Motor.A, Dir.forward, 0)
 
 //Stop motor
-MotorDriver.MotorStop(Motor.A)
+Borsuk.MotorStop(Motor.A)
 
 //Turn the steering gear S0 to the starting position
-MotorDriver.ServosTurnZero(Servo.S0)
+Borsuk.ServosTurnZero(Servo.S0)
 
 //Turn the steering gear S0 to the maximum position
-MotorDriver.ServosTurnFull(Servo.S0)
+Borsuk.ServosTurnFull(Servo.S0)
 
 //Stop Servo
-MotorDriver.ServoStop(Servo.S0)
+Borsuk.ServoStop(Servo.S0)
 
 //Servo Turn Angle
-MotorDriver.ServoTurnAngle(Servo.S1, 180)
+Borsuk.ServoTurnAngle(Servo.S1, 180)
 
 //
-MotorDriver.ServoMotorForward(Servo.S1, 180)
+Borsuk.ServoMotorForward(Servo.S1, 180)
+Borsuk.ServoMotorBack(Servo.S1, 180)
