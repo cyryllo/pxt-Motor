@@ -8,7 +8,7 @@
   "MotorDriver.ServosTurnFull|block": "舵机 %s| 转到180度",
   "MotorDriver.ServosTurnZero|block": "舵机 %s| 转到0度",
   "MotorDriver.ServoStop|block": "舵机 %s| 停止",
-  "MotorDriver.ServoTurnkat|block": "舵机 %s| 角度 %angle",
+  "MotorDriver.ServoTurnAngle|block": "舵机 %s| 角度 %angle",
   "MotorDriver.ServoMotorForward|block": "舵机 %s| 角度 %angle",
   "MotorDriver.ServoMotorBack|block": "舵机 %s| 角度 %angle",
   "Servo.S0|block": "S0",
