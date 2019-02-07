@@ -77,6 +77,7 @@ namespace Borsuk {
     //% blockId=ServosTurnZero
     //% block="Servos %s| Turn Zero"
     //% weight=80
+    //% color=#4dc196
     export function ServosTurnZero(s: Servo): void {
         if (s == Servo.S0)
             pins.servoWritePin(S0_PIN, 0)
@@ -89,6 +90,7 @@ namespace Borsuk {
     //% blockId=ServosTurnFull
     //% block="Servos %s| Turn Full"
     //% weight=79
+    //% color=#4dc196
     export function ServosTurnFull(s: Servo): void {
         if (s == Servo.S0)
             pins.servoWritePin(S0_PIN, 180)
@@ -101,7 +103,8 @@ namespace Borsuk {
 
     //% blockId=ServoStop
     //% block="Servos %s| Stop"
-    //% weight=69 
+    //% weight=69
+    //% color=#4dc196
     export function ServoStop(s: Servo): void {
         if (s == Servo.S0)
             pins.servoSetPulse(S0_PIN, 0)
@@ -119,6 +122,7 @@ namespace Borsuk {
     //% block="Servos %s| Turn Angle %angle"
     //% weight=60 
     //% angle.min=0 angle.max=180
+    //% color=#4dc196
     export function ServoTurnAngle(s: Servo, angle: number): void {
         let temp = 0
         temp = angle * 10 + 500 //0.5ms - 2.5ms
