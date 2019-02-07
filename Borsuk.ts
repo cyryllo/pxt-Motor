@@ -162,7 +162,7 @@ namespace Borsuk {
 	
     //% blockId=ServoMotorStop
     //% block="Servos %s| Motor stop"
-    //% weight=69 
+    //% weight=60 
     	export function ServoMotorStop(s: Servo): void {
         if (s == Servo.S0)
             pins.servoSetPulse(S0_PIN, 90)
