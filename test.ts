@@ -25,4 +25,4 @@ Borsuk.ServoMotorForward(Servo.S1, 180)
 Borsuk.ServoMotorBackward(Servo.S1, 0)
 
 //Servo Motor Stop
-Borsuk.ServoMotorBackward(Servo.S1, 0)
+Borsuk.ServoMotorStop(Servo.S1, 90)
