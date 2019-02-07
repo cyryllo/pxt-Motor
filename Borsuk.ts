@@ -168,11 +168,11 @@ namespace Borsuk {
     //% color=#fd8934
     	export function ServoMotorStop(s: Servo): void {
         if (s == Servo.S0)
-            pins.servoSetPulse(S0_PIN, 90)
+            pins.servoWritePin(S0_PIN, 90)
         else if (s == Servo.S1)
-            pins.servoSetPulse(S1_PIN, 90)
+            pins.servoWritePin(S1_PIN, 90)
         else
-            pins.servoSetPulse(S2_PIN, 90)
+            pins.servoWritePin(S2_PIN, 90)
     }
 
 }
