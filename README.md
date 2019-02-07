@@ -14,6 +14,6 @@ Dodane zostały funkcje:
 * ServoMotorBackward - Jazda serwem do tyłu. 
 * ServoMotorStop - zatrzymanie serwa
 
-## License
+## Licencja
 
 MIT
