@@ -134,6 +134,7 @@ namespace Borsuk {
     //% block="Servos %s| Motor Forward %angle"
     //% weight=60 
     //% angle.min=1 angle.max=10
+    //% color=#fd8934
 	export function ServoMotorForward(s: Servo, angle: number): void {
         let temp2 = 0
         temp2 = angle * 90 + 500 //zakres 91-180
@@ -149,6 +150,7 @@ namespace Borsuk {
     //% block="Servos %s| Motor Backward %angle"
     //% weight=60 
     //% angle.min=1 angle.max=10
+    //% color=#fd8934
 	export function ServoMotorBackward(s: Servo, angle: number): void {
         let temp3 = 0
         temp3 = 1400 - angle * 90 //zakres 0-89
@@ -162,7 +164,8 @@ namespace Borsuk {
 	
     //% blockId=ServoMotorStop
     //% block="Servos %s| Motor stop"
-    //% weight=60 
+    //% weight=60
+    //% color=#fd8934
     	export function ServoMotorStop(s: Servo): void {
         if (s == Servo.S0)
             pins.servoSetPulse(S0_PIN, 90)
