@@ -16,4 +16,5 @@
         "test.ts"
     ],
     "public": true
+    "icon": "icon.jpg"
 }
