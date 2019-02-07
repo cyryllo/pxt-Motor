@@ -20,4 +20,4 @@ Borsuk.ServoTurnAngle(Servo.S1, 180)
 
 //
 Borsuk.ServoMotorForward(Servo.S1, 180)
-Borsuk.ServoMotorBack(Servo.S1, 180)
+Borsuk.ServoMotorBackward(Servo.S1, 0)
