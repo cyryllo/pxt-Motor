@@ -2,7 +2,7 @@
 
 ![icon.png](icon.png)
 
-Projekt Robota oparty na podstawce sterownika silników i serw od waveshare electronics. Urządzeniem dsterującym jest Micro:bit.
+Projekt Robota oparty na podstawce sterownika silników i serw od waveshare electronics. Urządzeniem sterującym jest Micro:bit.
 Robot wykonany jest ze sklejki i porusza się na szerwach 360 stopni. Stopniowo dodawanae będą kolejne funkcje oraz moduły robota.
 
 ## Zmiany względem oryginału
