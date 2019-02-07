@@ -143,11 +143,11 @@ namespace Borsuk {
         else
             pins.servoSetPulse(S2_PIN, temp2)
     }
-    //% blockId=ServoMotorForward
+    //% blockId=ServoMotorBackward
     //% block="Servos %s| Motor Forward %angle"
     //% weight=60 
     //% angle.min=89 angle.max=0
-	export function ServoMotorBack(s: Servo, angle: number): void {
+	export function ServoMotorBackward(s: Servo, angle: number): void {
         let temp3 = 0
         temp3 = angle * 10 + 500 //0.5ms - 2.5ms
         if (s == Servo.S0)
