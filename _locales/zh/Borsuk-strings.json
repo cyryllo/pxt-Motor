@@ -11,6 +11,7 @@
   "Borsuk.ServoTurnAngle|block": "舵机 %s| 角度 %angle",
   "Borsuk.ServoMotorForward|block": "舵机 %s| 角度 %angle",
   "Borsuk.ServoMotorBackward|block": "舵机 %s| 角度 %angle",
+  "Borsuk.ServoMotorStop|block": "舵机 %s",
   "Servo.S0|block": "S0",
   "Servo.S1|block": "S1",
   "Servo.S2|block": "S2",
