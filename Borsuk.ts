@@ -161,7 +161,7 @@ namespace Borsuk {
         if (s == Servo.S0)
             pins.servoWritePin(S0_PIN, temp3)
         else if (s == Servo.S1)
-            pins.sservoWritePin(S1_PIN, temp3)
+            pins.servoWritePin(S1_PIN, temp3)
         else
             pins.servoWritePin(S2_PIN, temp3)
     }
