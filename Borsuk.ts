@@ -159,11 +159,11 @@ namespace Borsuk {
         let temp3 = 0
         temp3 = 89 - angle * 2 //zakres 0-89
         if (s == Servo.S0)
-            pins.servoSetPulse(S0_PIN, temp3)
+            pins.servoWritePin(S0_PIN, temp3)
         else if (s == Servo.S1)
-            pins.servoSetPulse(S1_PIN, temp3)
+            pins.sservoWritePin(S1_PIN, temp3)
         else
-            pins.servoSetPulse(S2_PIN, temp3)
+            pins.servoWritePin(S2_PIN, temp3)
     }
 	
     //% blockId=ServoMotorStop
