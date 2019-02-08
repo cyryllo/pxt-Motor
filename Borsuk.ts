@@ -143,7 +143,7 @@ namespace Borsuk {
         let temp2 = 0
         temp2 = angle * 2 + 91 //zakres 91-180
         if (s == Servo.S0)
-            pins.sservoWritePin(S0_PIN, temp2)
+            pins.servoWritePin(S0_PIN, temp2)
         else if (s == Servo.S1)
             pins.servoWritePin(S1_PIN, temp2)
         else
