@@ -142,8 +142,8 @@ namespace Borsuk {
 	export function ServoMotorForward(s: Servo, angle: number): void {
         let temp2 = 0
 	let temp2p = 0
-        temp2p = angle * 2 + 91
-	temp2 =  89 - angle * 2
+        temp2p = 89 - angle * 2
+	temp2 =  angle * 2 + 91
         if (s == Servo.S0)
             pins.servoWritePin(S0_PIN, temp2)
         else if (s == Servo.S1)
@@ -160,8 +160,8 @@ namespace Borsuk {
 	export function ServoMotorBackward(s: Servo, angle: number): void {
         let temp3 = 0
 	let temp3p = 0
-        temp3p = 89 - angle * 2 
-	temp3 = angle * 2 + 91 
+        temp3p = angle * 2 + 91
+	temp3 = 89 - angle * 2
         if (s == Servo.S0)
             pins.servoWritePin(S0_PIN, temp3)
         else if (s == Servo.S1)
