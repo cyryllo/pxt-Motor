@@ -141,11 +141,13 @@ namespace Borsuk {
     //% color=#fd8934
 	export function ServoMotorForward(s: Servo, angle: number): void {
         let temp2 = 0
+	let temp2p = 0
         temp2 = angle * 2 + 91 //zakres 91-180
+	temp2p = 89 - angle * 2
         if (s == Servo.S0)
             pins.servoWritePin(S0_PIN, temp2)
         else if (s == Servo.S1)
-            pins.servoWritePin(S1_PIN, temp2)
+            pins.servoWritePin(S1_PIN, temp2p)
         else
             pins.servoWritePin(S2_PIN, temp2)
     }
@@ -157,11 +159,13 @@ namespace Borsuk {
     //% color=#fd8934
 	export function ServoMotorBackward(s: Servo, angle: number): void {
         let temp3 = 0
+	let temp3p = 0
         temp3 = 89 - angle * 2 //zakres 0-89
+	temp3p = angle * 2 + 91
         if (s == Servo.S0)
             pins.servoWritePin(S0_PIN, temp3)
         else if (s == Servo.S1)
-            pins.servoWritePin(S1_PIN, temp3)
+            pins.servoWritePin(S1_PIN, temp3p)
         else
             pins.servoWritePin(S2_PIN, temp3)
     }
@@ -172,11 +176,11 @@ namespace Borsuk {
     //% color=#fd8934
     	export function ServoMotorStop(s: Servo): void {
         if (s == Servo.S0)
-            pins.servoWritePin(S0_PIN, 90)
+            pins.servoSetPulse(S0_PIN, 0)
         else if (s == Servo.S1)
-            pins.servoWritePin(S1_PIN, 90)
+            pins.servoSetPulse(S1_PIN, 90)
         else
-            pins.servoWritePin(S2_PIN, 90)
+            pins.servoSetPulse(S2_PIN, 90)
     }
 
 }
