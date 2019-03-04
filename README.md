@@ -1,6 +1,6 @@
 # Borsuk - Robot
 
-![icon.png](icon.png)
+![icon.png](https://raw.githubusercontent.com/cyryllo/Borsuk/master/icon.png)
 
 Projekt Robota oparty na podstawce sterownika silników i serw od waveshare electronics. Urządzeniem sterującym jest Micro:bit.
 Robot wykonany jest ze sklejki i porusza się na szerwach 360 stopni. Stopniowo dodawanae będą kolejne funkcje oraz moduły robota.
