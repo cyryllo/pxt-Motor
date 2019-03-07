@@ -1,7 +1,7 @@
 {
     "name": "ptx-Borsuk",
     "version": "0.6.4",
-    "description": "Blocks for Robot Borsuk:bit with ",
+    "description": "Blocks for Robot Borsuk:bit",
     "license": "MIT",
     "dependencies": {
         "core": "*"
