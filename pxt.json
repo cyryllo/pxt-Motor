@@ -1,7 +1,7 @@
 {
-    "name": "Borsuk",
+    "name": "ptx-Borsuk",
     "version": "0.6.4",
-    "description": "Cyryllo",
+    "description": "Blocks for Robot Borsuk:bit with ",
     "license": "MIT",
     "dependencies": {
         "core": "*"
