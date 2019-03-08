@@ -137,13 +137,13 @@ namespace Borsuk {
     //% blockId=ServoMotorForward
     //% block="Servos %s| Motor Forward %angle"
     //% weight=60 
-    //% angle.min=1 angle.max=44
+    //% angle.min=1 angle.max=10
     //% color=#fd8934
 	export function ServoMotorForward(s: Servo, angle: number): void {
         let temp2 = 0
 	let temp2p = 0
-        temp2p = 89 - angle * 2
-	temp2 =  angle * 2 + 91
+        temp2p = 90 - angle * 8
+	temp2 =  angle * 8 + 90
         if (s == Servo.S0)
             pins.servoWritePin(S0_PIN, temp2)
         else if (s == Servo.S1)
@@ -155,13 +155,13 @@ namespace Borsuk {
     //% blockId=ServoMotorBackward
     //% block="Servos %s| Motor Backward %angle"
     //% weight=60 
-    //% angle.min=1 angle.max=44
+    //% angle.min=1 angle.max=10
     //% color=#fd8934
 	export function ServoMotorBackward(s: Servo, angle: number): void {
         let temp3 = 0
 	let temp3p = 0
-        temp3p = angle * 2 + 91
-	temp3 = 89 - angle * 2
+        temp3p = angle * 8 + 90
+	temp3 = 90 - angle * 8
         if (s == Servo.S0)
             pins.servoWritePin(S0_PIN, temp3)
         else if (s == Servo.S1)
