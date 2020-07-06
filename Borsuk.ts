@@ -41,7 +41,8 @@ namespace Borsuk {
     //% weight=100
     //% speed.min=0 speed.max=16
     export function MotorRun(m: Motor, index: Dir, speed: number): void {
-        speed = speed * 64 - 1; // map 0 to 1023
+       if(speed == 0) speed = 0;
+       else  speed = speed * 64 - 1; // map 0 to 1023
 
         if (m == Motor.A) {
             pins.analogWritePin(PWMA, speed)
