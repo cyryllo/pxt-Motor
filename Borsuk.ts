@@ -37,7 +37,7 @@ namespace Borsuk {
 	 * Motor Run
 	 * @param speed [0-16] speed of Motor; eg: 10, 0, 16
 	*/
-    //% blockId=Borsuk_MotorRun block="Silnik %m|jedź %index|prędkość %speed"
+    //% blockId=Borsuk_MotorRun block="Silnik %m|jedź do %index|z prędkośią %speed"
     //% weight=100
     //% speed.min=0 speed.max=16
     export function MotorRun(m: Motor, index: Dir, speed: number): void {
@@ -66,7 +66,7 @@ namespace Borsuk {
     }
 
     //% blockId=MotorStop
-    //% block="Silnik %Motor| Stop"
+    //% block="Zaczymaj silnik %Motor|"
     //% weight=90
     export function MotorStop(m: Motor): void {
         if (m == Motor.A)
@@ -76,7 +76,7 @@ namespace Borsuk {
     }
 
     //% blockId=ServosTurnZero
-    //% block="Servo %s| ustaw zero"
+    //% block="Servo %s| ustaw na kąt 0"
     //% weight=80
     //% color=#4dc196
     export function ServosTurnZero(s: Servo): void {
@@ -89,7 +89,7 @@ namespace Borsuk {
     }
 
     //% blockId=ServosTurnFull
-    //% block="Servo %s| ustaw max"
+    //% block="Servo %s| ustaw na kąt 180"
     //% weight=79
     //% color=#4dc196
     export function ServosTurnFull(s: Servo): void {
@@ -103,7 +103,7 @@ namespace Borsuk {
 
 
     //% blockId=ServoStop
-    //% block="Servo %s| Stop"
+    //% block="Zatrzymaj Servo %s|"
     //% weight=69
     //% color=#4dc196
     export function ServoStop(s: Servo): void {
@@ -169,19 +169,6 @@ namespace Borsuk {
             pins.servoWritePin(S1_PIN, temp3p)
         else
             pins.servoWritePin(S2_PIN, temp3)
-    }
-	
-    //% blockId=ServoMotorStop
-    //% block="Servo %s| stop"
-    //% weight=60
-    //% color=#fd8934
-    	export function ServoMotorStop(s: Servo): void {
-        if (s == Servo.S0)
-            pins.servoSetPulse(S0_PIN, 0)
-        else if (s == Servo.S1)
-            pins.servoSetPulse(S1_PIN, 0)
-        else
-            pins.servoSetPulse(S2_PIN, 0)
     }
 
 }
