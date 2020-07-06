@@ -15,9 +15,9 @@ enum Servo {
 }
 
 enum Dir {
-    //% block="Forward"
+    //% block="Przód"
     forward = 0x1,
-    //% block="Backward"
+    //% block="Tył"
     backward = 0x2,
 }
 
@@ -37,7 +37,7 @@ namespace Borsuk {
 	 * Motor Run
 	 * @param speed [0-16] speed of Motor; eg: 10, 0, 16
 	*/
-    //% blockId=Borsuk_MotorRun block="Motor %m|index %index|speed %speed"
+    //% blockId=Borsuk_MotorRun block="Silnik %m|jedź %index|prędkość %speed"
     //% weight=100
     //% speed.min=0 speed.max=16
     export function MotorRun(m: Motor, index: Dir, speed: number): void {
@@ -65,7 +65,7 @@ namespace Borsuk {
     }
 
     //% blockId=MotorStop
-    //% block="Motor %Motor| Stop"
+    //% block="Silnik %Motor| Stop"
     //% weight=90
     export function MotorStop(m: Motor): void {
         if (m == Motor.A)
@@ -75,7 +75,7 @@ namespace Borsuk {
     }
 
     //% blockId=ServosTurnZero
-    //% block="Servos %s| Turn Zero"
+    //% block="Servo %s| ustaw zero"
     //% weight=80
     //% color=#4dc196
     export function ServosTurnZero(s: Servo): void {
@@ -88,7 +88,7 @@ namespace Borsuk {
     }
 
     //% blockId=ServosTurnFull
-    //% block="Servos %s| Turn Full"
+    //% block="Servo %s| ustaw max"
     //% weight=79
     //% color=#4dc196
     export function ServosTurnFull(s: Servo): void {
@@ -102,7 +102,7 @@ namespace Borsuk {
 
 
     //% blockId=ServoStop
-    //% block="Servos %s| Stop"
+    //% block="Servo %s| Stop"
     //% weight=69
     //% color=#4dc196
     export function ServoStop(s: Servo): void {
@@ -119,7 +119,7 @@ namespace Borsuk {
 	 * @param angle [0-180] speed of Motor; eg: 180, 0, 180
 	*/
     //% blockId=ServoTurnAngle
-    //% block="Servos %s| Turn Angle %angle"
+    //% block="Servo %s| ustaw pod kątem %angle"
     //% weight=60 
     //% angle.min=0 angle.max=180
     //% color=#4dc196
@@ -135,7 +135,7 @@ namespace Borsuk {
     }
 	
     //% blockId=ServoMotorForward
-    //% block="Servos %s| Motor Forward %angle"
+    //% block="Servo %s| obracaj do przodu %angle"
     //% weight=60 
     //% angle.min=1 angle.max=10
     //% color=#fd8934
@@ -153,7 +153,7 @@ namespace Borsuk {
     }
 	
     //% blockId=ServoMotorBackward
-    //% block="Servos %s| Motor Backward %angle"
+    //% block="Servo %s| obracaj do tyłu %angle"
     //% weight=60 
     //% angle.min=1 angle.max=10
     //% color=#fd8934
@@ -171,7 +171,7 @@ namespace Borsuk {
     }
 	
     //% blockId=ServoMotorStop
-    //% block="Servos %s| Motor stop"
+    //% block="Servo %s| stop"
     //% weight=60
     //% color=#fd8934
     	export function ServoMotorStop(s: Servo): void {
