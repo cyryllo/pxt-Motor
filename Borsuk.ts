@@ -37,7 +37,7 @@ namespace Borsuk {
 	 * Motor Run
 	 * @param speed [0-16] speed of Motor; eg: 10, 0, 16
 	*/
-    //% blockId=Borsuk_MotorRun block="Silnik %m|jedź do %index|z prędkośią %speed"
+    //% blockId=Borsuk_MotorRun block="Silnik %m|jedź do %index|z prędkością %speed"
     //% weight=100
     //% speed.min=0 speed.max=16
     export function MotorRun(m: Motor, index: Dir, speed: number): void {
@@ -66,7 +66,7 @@ namespace Borsuk {
     }
 
     //% blockId=MotorStop
-    //% block="Zaczymaj silnik %Motor|"
+    //% block="Zatrzymaj silnik %Motor|"
     //% weight=90
     export function MotorStop(m: Motor): void {
         if (m == Motor.A)
@@ -136,7 +136,7 @@ namespace Borsuk {
     }
 	
     //% blockId=ServoMotorForward
-    //% block="Servo %s| obracaj do przodu %angle"
+    //% block="Servo %s| obracaj do przodu z prędkością %angle"
     //% weight=60 
     //% angle.min=1 angle.max=10
     //% color=#fd8934
@@ -154,7 +154,7 @@ namespace Borsuk {
     }
 	
     //% blockId=ServoMotorBackward
-    //% block="Servo %s| obracaj do tyłu %angle"
+    //% block="Servo %s| obracaj do tyłu z prędkością %angle"
     //% weight=60 
     //% angle.min=1 angle.max=10
     //% color=#fd8934
