@@ -1,6 +1,6 @@
 {
     "name": "ptx-Borsuk",
-    "version": "0.6.5",
+    "version": "0.9.8",
     "description": "Blocks for Robot Borsuk:bit",
     "license": "MIT",
     "dependencies": {
@@ -8,6 +8,7 @@
     },
     "files": [
         "README.md",
+        "icon.png",
         "Borsuk.ts",
         "_locales/zh/Borsuk-strings.json"
     ],
