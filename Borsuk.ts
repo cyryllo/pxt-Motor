@@ -15,9 +15,9 @@ enum Servo {
 }
 
 enum Dir {
-    //% block="Przód"
+    //% block="Przodu"
     forward = 0x1,
-    //% block="Tył"
+    //% block="Tyłu"
     backward = 0x2,
 }
 
@@ -74,33 +74,6 @@ namespace Borsuk {
         else
             pins.analogWritePin(PWMB, 0)
     }
-
-    //% blockId=ServosTurnZero
-    //% block="Servo %s| ustaw na kąt 0"
-    //% weight=80
-    //% color=#4dc196
-    export function ServosTurnZero(s: Servo): void {
-        if (s == Servo.S0)
-            pins.servoWritePin(S0_PIN, 0)
-        else if (s == Servo.S1)
-            pins.servoWritePin(S1_PIN, 0)
-        else
-            pins.servoWritePin(S2_PIN, 0)
-    }
-
-    //% blockId=ServosTurnFull
-    //% block="Servo %s| ustaw na kąt 180"
-    //% weight=79
-    //% color=#4dc196
-    export function ServosTurnFull(s: Servo): void {
-        if (s == Servo.S0)
-            pins.servoWritePin(S0_PIN, 180)
-        else if (s == Servo.S1)
-            pins.servoWritePin(S1_PIN, 180)
-        else
-            pins.servoWritePin(S2_PIN, 180)
-    }
-
 
     //% blockId=ServoStop
     //% block="Zatrzymaj Servo %s|"
