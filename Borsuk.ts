@@ -47,11 +47,11 @@ namespace Borsuk {
         if (m == Motor.A) {
             pins.analogWritePin(PWMA, speed)
             if (index == Dir.forward) {
-                pins.digitalWritePin(AIN1, 0)
-                pins.digitalWritePin(AIN2, 1)
-            } else {
                 pins.digitalWritePin(AIN1, 1)
                 pins.digitalWritePin(AIN2, 0)
+            } else {
+                pins.digitalWritePin(AIN1, 0)
+                pins.digitalWritePin(AIN2, 1)
             }
         } else {
             pins.analogWritePin(PWMB, speed)
