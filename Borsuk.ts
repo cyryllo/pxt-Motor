@@ -56,11 +56,11 @@ namespace Borsuk {
         } else {
             pins.analogWritePin(PWMB, speed)
             if (index == Dir.forward) {
-                pins.digitalWritePin(BIN1, 0)
-                pins.digitalWritePin(BIN2, 1)
-            } else {
                 pins.digitalWritePin(BIN1, 1)
                 pins.digitalWritePin(BIN2, 0)
+            } else {
+                pins.digitalWritePin(BIN1, 0)
+                pins.digitalWritePin(BIN2, 1)
             }
         }
     }
